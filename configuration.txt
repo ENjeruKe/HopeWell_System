@@ -1,0 +1,37 @@
+HopeWell
+Download APPSERV version 8.5.0 from:
+
+https://sourceforge.net/projects/appserv/files/AppServ%20Open%20Project/8.5.0/appserv-win32-8.5.0.exe/download?use_mirror=liquidtelecom&download=
+
+
+OR 
+
+https://sourceforge.net/projects/appserv/files/AppServ%20Open%20Project/8.5.0
+
+
+INSTALL APPSERV with following settings:
+install directory: C:\Appserv
+host: localhost
+username: root
+root password: v9p0CnfH60
+port: 3306 
+
+extract hopewell.zip to C:\Appserv\www\hopewell.zip
+
+start apache and mysql open 
+http //localhost/phpmyadmin/
+
+DOUBLE CLICK & run INCLUDED ".\PHP\show_compatibility_56.BAT"
+
+
+in phpmyadmin import SQL data from ".\PHP\newhmisc_trinity_petcan.sql"
+
+
+login to medical app
+
+http://localhost/Hopewell/index.php
+
+login with:
+
+username: pearl
+password: pearl
