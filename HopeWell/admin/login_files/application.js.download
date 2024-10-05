@@ -1,0 +1,64 @@
+
+function showRemindPassword()
+{
+	$("#remindpassword").css("visibility","visible");
+	$("#remindpassword").css("display","inline");
+	$("#remindpassword").show();
+}
+
+function hideRemindPassword()
+{
+	$("#remindpassword").css("visibility","hidden");
+	$("#remindpassword").css("display","none");
+	$("#remindpassword").hide();	
+}
+
+function highlightForm(formDivId)
+{
+	$(".wrapform-something").removeClass("activeform");	
+	$("#"+formDivId).addClass("activeform");
+	//$(".default_input_"+formDivId).focus();	
+}
+
+$(function()
+{
+	$(".showRemindPassword").click(
+		function()
+		{ showRemindPassword();});
+	
+	$(".hideRemindPassword").click(
+		function()
+		{ hideRemindPassword(); });
+		
+	$(".wrapform-something").click(
+		function(e)
+		{ 
+			var formDivId=$(this).attr("id");
+			var clickedElemId = e.target.id;			
+			if(clickedElemId=='clicktoregister')
+			{ formDivId = 'wrapform-something-form-register'; }
+			else if(clickedElemId=='clicktologin')
+			{ formDivId = 'wrapform-something-form-login';}
+			highlightForm(formDivId); 
+		});
+		
+	$(".clicktoregister").click(	
+		function()
+		{ var formDivId="wrapform-something-form-register";highlightForm(formDivId); });
+		
+	$(".clicktologin").click(	
+		function()
+		{ var formDivId="wrapform-something-form-login";highlightForm(formDivId); });	
+		
+	$("#submit-reset-password").click(	
+		function()
+		{
+			$("#form-login").attr("action","/forgotpassword");
+		});
+
+	$("form").on('submit', function() {
+		var date = new Date();
+		var timezoneOffset = date.getTimezoneOffset();
+		$("input[name=time_offset]").val(-timezoneOffset * 60);
+	});
+});

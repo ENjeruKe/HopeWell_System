@@ -1,0 +1,330 @@
+<?php
+   session_start();
+require('open_database.php');
+?>
+
+
+
+﻿<html>
+<!--title>Patients Register</title-->
+<head>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+
+
+
+
+
+<body>
+
+<script language="javascript" type="text/javascript">
+<!--
+var newwindow;
+function popitup(url) {
+	newwindow=window.open(url,'newwindow','height=500,width=900');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+function popitup2(url) {
+	newwindow=window.open(url,'newwindow','height=600,width=1000');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+function popitup22(url) {
+	newwindow=window.open(url,'newwindow','height=300,width=500');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+function popitup3(url) {
+	newwindow=window.open(url,'newwindow','height=600,width=1000');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+function closeWin(url) {
+    newwindow.close();   // Closes the new window
+}
+
+
+function myFunction() {
+    var myWindow = window.open("patients_receipt.php", "", "width=1000, height=600");
+}
+</script>
+
+
+
+<style>
+#header {
+    line-height:30px;
+    background-color:white;
+    height:20px;
+    width:900px;
+    float:left;
+    padding:2px;	      
+}
+
+#hd2 {
+    background-color:blue;
+    color:white;
+    text-align:left;
+    padding:5px;
+}
+
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:450px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+
+#nav1 {
+    line-height:20px;
+    background-color:blue;
+    color:white;
+    height:20px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+
+#nav2 {
+    line-height:20px;
+    background-color:blue;
+    color:white;
+    height:20px;
+    width:200px;
+    float:left;
+    padding:5px;	      
+}
+
+#nav3 {
+    line-height:20px;
+    background-color:blue;
+    color:white;
+    height:20px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+
+#nav4 {
+    line-height:20px;
+    background-color:blue;
+    color:white;
+    height:20px;
+    width:150px;
+    float:left;
+    padding:5px;	      
+}
+
+#nav4a {
+    line-height:20px;
+    background-color:blue;
+    color:white;
+    height:20px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+
+#nav5 {
+    line-height:20px;
+    background-color:blue;
+    color:white;
+    height:20px;
+    width:75px;
+    float:left;
+    padding:5px;	      
+}
+
+#nav6 {
+    line-height:20px;
+    background-color:blue;
+    color:white;
+    height:20px;
+    width:60px;
+    float:left;
+    padding:5px;	      
+}
+#nav7 {
+    line-height:20px;
+    background-color:blue;
+    color:blue;
+    height:20px;
+    width:20px;
+    float:left;
+    padding:5px;	      
+}
+
+#nav8 {
+    line-height:20px;
+    background-color:blue;
+    color:blue;
+    height:20px;
+    width:5px;
+    float:left;
+    padding:5px;	      
+}
+
+#section {
+    height:350px;
+    width:900px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+</style>
+</head>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<div id="header" align ="left">
+<input type="submit" name="Submit"  class="button" value="Book Appointment" onclick="return popitup('patients_reg_add2.php')"/>
+
+<!--input type="submit" name="Submit"  class="button" value="Register Patient" onclick="return popitup3('patient_register2.php')"/-->
+
+<input type="submit" name="Submit"  class="button" value="List" onclick="return popitup2('list_patients.php')"/>
+
+<input type="submit" name="Submit"  class="button" value="Attach Scan" onclick="return popitup22('upload_form.php')"/>
+
+<!--input type="submit" name="Submit"  class="button" value="Post Receipt"  onclick="return popitup('patients_receipt.php')"/-->
+<!--input type="button" value="Close" onclick="self.close()"-->
+<!--/form-->
+</div>
+
+
+
+
+
+
+
+
+<div data-role="page">
+  <div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show Popup Form</a>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+      <form method="post" action="patients_reg.html">
+        <div>
+
+
+<?php
+
+
+
+echo"<tr><td width ='100'><b>Invoice No.</td><td width='50' align='left'><input type='text' id ='jv_no' name='jv_no' size='10' required></td></tr>";
+
+echo"<tr><td width ='100'><b>Date:</td><td width='50' align='left'><input type='text' id ='date' name='date' size='10' value ='$mydate'></td></tr>";
+echo"<tr><td width ='100' align ='left'><b>Supplier A/c:</b></td><td>";
+echo"<select id='db_account' name='db_account'>";
+$cdquery="SELECT account_name FROM suppliersfile";
+$cdresult=mysql_query($cdquery) or die ("Query to get data from firsttable failed: ".mysql_error());
+$query3 = "select * FROM suppliersfile";
+$result3 =mysql_query($query3) or die(mysql_error());
+$num3 =mysql_numrows($result3) or die(mysql_error());
+$i3=0;
+while ($cdrow=mysql_fetch_array($cdresult)) {
+      $cdTitle=$cdrow["account_name"];     
+      echo "<option>$cdTitle</option>";            
+      }
+echo"</select>";
+echo"</td></tr>"; 
+
+echo"<tr><td width ='100' align ='left'><b>Debit A/c:</b></td><td>";
+echo"<select id='tr_type' name='tr_type'>";
+$cdquery="SELECT account_name FROM glaccountsf";
+$cdresult=mysql_query($cdquery) or die ("Query to get data from firsttable failed: ".mysql_error());
+$query3 = "select * FROM glaccountsf";
+$result3 =mysql_query($query3) or die(mysql_error());
+$num3 =mysql_numrows($result3) or die(mysql_error());
+$i3=0;
+while ($cdrow=mysql_fetch_array($cdresult)) {
+      $cdTitle=$cdrow["account_name"];     
+      echo "<option>$cdTitle</option>";            
+      }
+echo"</select>";
+echo"</td></tr>"; 
+
+echo"<tr><td width ='50'><b>Narration</b></td><td width='50' align='left'><input type='text' id ='narration' name='narration' size='50' required></td></tr>";
+
+echo"<tr><td width ='50'><b>Amount</b></td><td width='10' align='left'><input type='text' id ='amount' name='amount' size='10' required> </td></tr>";
+echo"</table>";
+//removed from here
+//-----------------
+echo"<img src='ico/black.jpg' style='width:600px;height:1px;'>";   
+
+      echo"</table>";
+echo"<table width ='500' border='0' border color ='red'><td align ='right'><input type='submit' name='save_cancel'  class='button' value='Save Invoice '></td></table>";      
+
+      //echo"</table>";
+?>
+
+
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<div id="section">
+<!--OBJECT data="patient_register.php" type="text/html" style="margin: 0%; width: 800px; height: 350px; padding 0px; text-align:left;"></OBJECT-->
+<OBJECT data="medical_form.php" type="text/html" style="margin: 0%; width: 800px; height: 350px; padding 0px; text-align:left;"></OBJECT>
+
+</div>
+
+
+
+</div>
+
+
+<div id="footer">
+
+Copyright Â© Paltech-systems.com | Affordable Connections - Call. +254-729-446-243
+</div>
+</body>
+</DIV>
+</html>

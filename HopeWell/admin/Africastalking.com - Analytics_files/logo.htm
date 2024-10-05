@@ -1,0 +1,575 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!-- Default layout -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Viewport" content="width=device-width, initial-scale=1.0" /><link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<link href="/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/application.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/doc.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/fontawesome/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/themify-icons/themify-icons.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/js/account/datepicker/styles/datepicker.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/css/update.css" media="screen" rel="stylesheet" type="text/css" /><title>Africastalking.com</title>    
+</head>
+
+<body>
+
+    <header class="navbar navbar-default navbar-static-top">
+
+    <!-- start: NAVBAR HEADER -->
+    <div class="navbar-header">
+        <a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
+            <i class="ti-align-justify"></i>
+        </a>
+        <a class="navbar-brand" href="https://www.africastalking.com">
+            <img src="/img/logo.png" alt="Africa's Talking"/>
+        </a>
+        <a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
+            <i class="ti-align-justify"></i>
+        </a>
+        <a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="ti-view-grid"></i>
+        </a>
+    </div>
+    <!-- end: NAVBAR HEADER -->
+    
+    <!-- start: NAVBAR COLLAPSE -->
+    <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-right" style="min-width:350px">
+            <!-- start: Home -->
+            <li class="dropdown">
+                <a href="http://www.africastalking.com">
+                    <span class="dot-badge partition-red"></span> <i class="ti-home"></i> <span>Home</span>
+                </a>
+            </li>
+            <!-- end: Home -->
+              
+            <!-- start: My Account  -->
+                            
+                <li class="dropdown">
+                    <a href="/settings">
+                        <i class="ti-user"></i><span >[&nbsp;benardwere&nbsp;]</span>
+                    </a>								
+                </li>
+                &nbsp;
+                <li class="dropdown">
+                    <a href="/logout">
+                        <i class="ti-lock"></i><span>Log out</span>
+                    </a>								
+                </li>
+                
+                        <!-- end: My Accounts  -->
+            
+            <!-- start: Docs SWITCHER -->
+            <li class="dropdown">
+                <a href="http://docs.africastalking.com" target="_blank">
+                    <i class="ti-book"></i> Docs
+                </a>
+                
+            </li>
+            <!-- start: LANGUAGE SWITCHER -->
+        </ul>
+        
+                <!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+        <div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+            <div class="arrow-left"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+    </div>
+    <!-- end: NAVBAR COLLAPSE -->
+</header>
+
+    
+    <div id="app">
+
+        <div class="sidebar app-aside" id="sidebar">
+    <div class="sidebar-container perfect-scrollbar">
+        <nav>
+            <!-- start: MAIN NAVIGATION MENU -->
+            
+            
+            <ul class="main-navigation-menu">
+            
+                <li>
+                    <a href="/">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-home"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title"> Dashboard </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>                
+               
+               	<li>                    
+                    <a href="javascript:void(0)">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-mobile"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title">SMS</span><i class="icon-arrow"></i>
+                            </div>
+                        </div>
+                    </a>                    
+                    <ul class="sub-menu">
+                        <li>
+                        
+                            <a href="/">
+                                <span class="title"> Bulk SMS</span>
+                                <i class="icon-arrow"></i>
+                            </a>
+                        
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/sms/outbox">
+                                        Outbox
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/analytics/bulksms">
+                                        Analytics
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                		</li>
+                        <li 
+                        >
+                            <a href="javascript:;">
+                                <span>Premium SMS</span> <i class="icon-arrow"></i>
+                            </a>                            
+                            <ul class="sub-menu">
+								<li>
+                                    <a href="/sms/premiumoutbox">
+                                        Premium Outbox
+                                    </a>                                            
+                                </li>
+                                <li>
+                                    <a href="/sms/subscription">
+                                        Subscription products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/analytics/premiumsms">
+                                        Analytics
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            
+                        </li>
+			<li>
+                        	<a href="/sms/inbox">
+                                        Inbox
+                        	</a>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <span>Shortcodes</span> <i class="icon-arrow"></i>
+                            </a>
+                            
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/sms/shortcodes">
+                                        My Shortcodes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/sms/shortcoderequest">
+                                        Request
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li >
+                            <a href="javascript:;">
+                                <span>Alphanumerics</span> <i class="icon-arrow"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/sms/alphanumerics">
+                                        My alphanumerics
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/sms/alphanumericrequest">
+                                        Request
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li >
+                            <a href="javascript:void(0);">
+                                <span>Keywords</span> <i class="icon-arrow"></i>
+                            </a>
+                            
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/sms/keywords">My Keywords
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/sms/keywordrequest">
+                                        Request
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </li>
+
+                        <li>
+                            <a href="/sms/smpp">
+                                <span>SMPP Accounts</span>
+                            </a>
+                       </li>        
+                        <li >
+                            <a href="javascript:;">
+                                <span>SMS callback URLs</span> <i class="icon-arrow"></i>
+                            </a>
+                            
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="/sms/inboxcallback">
+                                       Incoming messages
+                                    </a>
+                                </li>
+				<li>
+                                    <a href="/sms/dlrcallback">
+                                        Delivery report
+                                    </a>
+                                </li>
+				<li>
+                                    <a href="/sms/subscriptioncallback">
+                                        Subscription notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/sms/blacklistcallback">
+                                        Bulk SMS Opt out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>  
+                            
+                    </ul>
+                </li>
+                
+                <li>                
+                    <a href="javascript:void(0)">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-microphone"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title">Voice</span><i class="icon-arrow"></i>
+                            </div>
+                        </div>
+                    </a>                    
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/voice/phones">
+                                <span class="title">My Phone Numbers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/voice/request">
+                                <span class="title">Request a number</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/voice/sessions">
+                                <span class="title"> My Call logs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/analytics/voice">
+                                <span class="title"> Analytics</span>
+                            </a>
+                        </li>
+						
+                                                            
+                    </ul>                    
+                </li>
+                
+                <li>
+                    <a href="javascript:void(0)">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-settings"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title"> USSD</span><i class="icon-arrow"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/ussd/servicecodes">
+                                <span class="title"> My service codes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/ussd/ussdrequest">
+                                <span class="title"> Request a code</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/ussd/sessions">
+                                <span class="title"> My sessions</span>
+                            </a>
+                        </li>                                    									
+                        <li>
+                            <a href="/ussd/callback">
+                                <span class="title"> Callbacks</span>
+                            </a>
+                        </li>                                
+                        <li>
+                            <a href="/analytics/ussd">
+                                <span class="title"> Analytics</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="javascript:void(0)">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-receipt"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title">  Airtime </span><i class="icon-arrow"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="sub-menu">
+                                                        
+                        <li>
+                            <a href="/airtime/transactions">
+                                <span class="title"> My transactions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/airtime/callback">
+                                <span class="title"> Callback URL: status</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/analytics/airtime">
+                                <span class="title"> Analytics</span>
+                            </a>
+                        </li>
+                    </ul>						
+                </li>
+
+                
+                <li>
+                    <a href="javascript:void(0)">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-receipt"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title"> Billing</span><i class="icon-arrow"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="sub-menu">
+                        <li >
+                            <a href="/billing/">
+                                <span class="title"> Payment methods </span><i class="icon-arrow"></i>
+                            </a>
+							<ul class="submenu">
+								<li>
+									<a href="/billing/paymentmethods/kenya">
+										<span class="title"> Kenya </span>
+									</a>
+								</li>
+								<li>
+									<a href="/billing/paymentmethods/nigeria">
+										<span class="title"> Nigeria </span>
+									</a>
+								</li>
+								<li>
+									<a href="/billing/paymentmethods/uganda">
+										<span class="title"> Uganda </span>
+									</a>
+								</li>
+								<li>
+									<a href="/billing/paypal">
+										<span class="title"> Pay via paypal </span>
+									</a>
+								</li>
+							</ul>
+                        </li>
+                        <li>
+                            <a href="/billing/statement">
+                                <span class="title"> Account statement </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/billing/notifications">
+                                <span class="title">Low balance alert</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-plug"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title"> Settings</span><i class="icon-arrow"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="sub-menu">
+                    
+                        <li>
+                            <a href="/settings/changepassword">
+                                <span class="title"> Change Password </span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="/settings/apikey">
+                                <span class="title">API Key</span>
+                            </a>
+                        </li>
+                                                            
+                    </ul>
+                </li>
+                <li>
+                    <a href="/profile">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-image "></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title"> Developer Profile </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="ti-location-pin"></i>
+                            </div>
+                            <div class="item-inner">
+                                <span class="title"> Contact Us</span><i class="icon-arrow"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="/contactus">
+                                <span class="title"> Talk to Sales</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+				
+				                                
+            </ul>
+            <!-- end: MAIN NAVIGATION MENU -->
+           
+        </nav>
+    </div>
+</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>
+  Africastalking.com  </title>
+
+</head>
+
+<body>
+
+<h1>
+Application Error :
+Page not found</h1>
+
+
+
+<hr/>
+
+
+
+
+
+  
+
+
+
+
+
+<hr/>
+
+</body>
+
+</html>
+    
+    
+    
+<footer>
+				<div class="footer-inner">
+					<div class="pull-left">
+						&copy; <span class="current-year"></span>&nbsp;<span class="text-bold text-uppercase">Africastalking</span>. <span>All rights reserved</span>
+					</div>
+					<div class="pull-right">
+						<span class="go-top"><i class="ti-angle-up"></i></span>
+					</div>
+				</div>
+			</footer></div>
+</body>
+    <script type="text/javascript" src="/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/js/account/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="/js/account/datepicker/moment.min.js"></script>
+<script type="text/javascript" src="/js/account/datepicker/datepicker.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76516889-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  window.intercomSettings = {
+    app_id: "zqbvfqge",
+	name: "benardwere",
+	email: "benardwere@yahoo.com", 
+	created_at: "2016-11-11 14:10:03"  
+};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/zqbvfqge';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</html>

@@ -1,0 +1,18 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^astradental\.hmisglobal\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.astradental\.hmisglobal\.com$
+RewriteRule ^/?$ "http\:\/\/www\.hmisglobal\.com\/astradental\/index\.php" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^ahmadi\.hmisglobal\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ahmadi\.hmisglobal\.com$
+RewriteRule ^/?$ "http\:\/\/www\.hmisglobal\.com\/ahmadi\/index\.php" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^integra\.hmisglobal\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.integra\.hmisglobal\.com$
+RewriteRule ^/?$ "http\:\/\/www\.hmisglobal\.com\/integra\/index\.php" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^iscan\.hmisglobal\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.iscan\.hmisglobal\.com$
+RewriteRule ^/?$ "http\:\/\/www\.hmisglobal\.com\/iscan\/index\.php" [R=301,L]
+

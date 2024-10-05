@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+        <title>HMIS - Global: Patients Register</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="patients_reg_add_files/default.css">
+    </head>
+    <body> 
+    <div id="section">
+    <OBJECT data="http://localhost/save_patients.php" type="text/html" style="margin: 0%; width: 1px; height: 0px;"></OBJECT>
+    </div>
+   
+        <form method="post" action="http://localhost/HGlobal/patients_reg_add.html" class="register">
+            <h1>Registration</h1>
+            <!--fieldset class="row1">
+                <legend>Account Details
+                </legend>
+                <p>
+                    <label>Email *
+                    </label>
+                    <input type="text">
+                    <label>Repeat email *
+                    </label>
+                    <input type="text">
+                </p>
+                <p>
+                    <label>Password*
+                    </label>
+                    <input type="text">
+                    <label>Repeat Password*
+                    </label>
+                    <input type="text">
+                    <label class="obinfo">* obligatory fields
+                    </label>
+                </p>
+            </fieldset-->
+            <fieldset class="row2">
+                <legend>Personal Details
+                </legend>
+                <p>
+                    <label>IP/OPD No. *
+                    </label>
+                    <input class="long" type="text" name ="adm_no">
+                </p>
+                <p>
+                    <label>Full Name *
+                    </label>
+                    <input class="long" type="text" name ="name">
+                </p>
+           
+                <p>
+                    <label>Phone *
+                    </label>
+                    <input maxlength="10" type="text" name ="phone">
+                </p>
+                <p>
+                    <label class="optional">Street
+                    </label>
+                    <input class="long" type="text" name ="street">
+                </p>
+                <p>
+                    <label>City *
+                    </label>
+                    <input class="long" type="text" name ="city">
+                </p>
+                <p>
+                    <label>Country *
+                    </label>
+                    <select>
+                        <option>
+                        </option>
+                        <option selected="selected" value="1">Kenya
+                        </option>
+                    </select>
+                </p>
+                <p>
+                    <label class="optional">E-mail:
+                    </label>
+                    <input class="long" value="e.g. xyz@yahoo.com" type="text" name ="email">
+
+                </p>
+
+                <p>
+                    <label class="optional">Admission Date
+                    </label>
+                    <input maxlength="10" value="  /  /    " type="text" name ="adm_date">
+                </p>
+
+                <p>
+                    <label class="optional">Discharge Date                    </label>
+                    <input maxlength="10" value="  /  /    " type="text" name ="dis_date">
+
+                </p>
+                <p>
+                    <label class="optional">Att.Doctor  </label>
+                    <input class="long"   type="text" name ="doctor">
+
+                </p>
+
+                <p>
+                    <label class="optional">Payimg A/c No. </label>
+                    <input maxlength="10"   type="text" name ="acc_no">
+
+                </p>
+
+                <p>
+                    <label class="optional">Payimg A/c Name. </label>
+                    <input class="long"   type="text" name ="acc_name">
+
+                </p>
+
+
+            </fieldset>
+
+            <fieldset class="row3">
+                <legend>Further Information
+                </legend>
+                <p>
+                    <label>Gender *</label>
+                    <input checked="checked" value="radio" type="radio">
+                    <label class="gender">Male</label>
+                    <input value="radio" type="radio">
+                    <label class="gender">Female</label>
+                </p>
+                <p>
+                    <label>Birthdate *
+                    </label>
+                    <select class="date">
+                        <option value="1">01
+                        </option>
+                        <option selected="selected" value="2">02
+                        </option>
+                        <option value="3">03
+                        </option>
+                        <option value="4">04
+                        </option>
+                        <option value="5">05
+                        </option>
+                        <option value="6">06
+                        </option>
+                        <option value="7">07
+                        </option>
+                        <option value="8">08
+                        </option>
+                        <option value="9">09
+                        </option>
+                        <option value="10">10
+                        </option>
+                        <option value="11">11
+                        </option>
+                        <option value="12">12
+                        </option>
+                        <option value="13">13
+                        </option>
+                        <option value="14">14
+                        </option>
+                        <option value="15">15
+                        </option>
+                        <option value="16">16
+                        </option>
+                        <option value="17">17
+                        </option>
+                        <option value="18">18
+                        </option>
+                        <option value="19">19
+                        </option>
+                        <option value="20">20
+                        </option>
+                        <option value="21">21
+                        </option>
+                        <option value="22">22
+                        </option>
+                        <option value="23">23
+                        </option>
+                        <option value="24">24
+                        </option>
+                        <option value="25">25
+                        </option>
+                        <option value="26">26
+                        </option>
+                        <option value="27">27
+                        </option>
+                        <option value="28">28
+                        </option>
+                        <option value="29">29
+                        </option>
+                        <option value="30">30
+                        </option>
+                        <option value="31">31
+                        </option>
+                    </select>
+                    <select>
+                        <option value="1">January
+                        </option>
+                        <option selected="selected" value="2">February
+                        </option>
+                        <option value="3">March
+                        </option>
+                        <option value="4">April
+                        </option>
+                        <option value="5">May
+                        </option>
+                        <option value="6">June
+                        </option>
+                        <option value="7">July
+                        </option>
+                        <option value="8">August
+                        </option>
+                        <option value="9">September
+                        </option>
+                        <option value="10">October
+                        </option>
+                        <option value="11">November
+                        </option>
+                        <option value="12">December
+                        </option>
+                    </select>
+                    <input class="year" size="4" maxlength="4" type="text">e.g 1976
+                </p>
+                <!--p>
+
+
+                </p-->
+                <p>
+                    <label>Children *
+                    </label>
+                    <input checked="checked" value="" type="checkbox" name ="child">
+                </p>
+                <div class="infobox"><h4>Helpful Information</h4>
+                    <p>Here comes some explaining text, sed ut 
+
+explicabo.</p>
+                </div>
+            </fieldset>
+            <fieldset class="row4">
+                <!--legend>Terms and Mailing
+                </legend>
+                <p class="agreement">
+                    <input value="" type="checkbox">
+                    <label>*  I accept the <a href="#">Terms and Conditions</a></label>
+                </p>
+                <p class="agreement">
+                    <input value="" type="checkbox">
+                    <label>I want to receive personalized offers by your site</label>
+                </p>
+                <p class="agreement">
+                    <input value="" type="checkbox">
+                    <label>Allow partners to send me personalized offers and related services</label>
+                </p-->
+            </fieldset>
+            <div><button name='submit' type='submit' class='button' id='contact-submit' data-submit='...Sending' >Submit</button></div>
+            <!--div><input type="submit" name="Submit"  class="button" value="New Patient" /></div-->
+            <!--input type="submit" name="Submit" class="button" onclick="return popitup('http://localhost/HGlobal/reg_add.html')">Register »</button-->
+        </form>
+    
+
+
+
+
+
+
+</body></html>
